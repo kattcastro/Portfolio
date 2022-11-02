@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@viewport {
+    width: 678px;
+    zoom: 1.0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: rgb(195, 195, 216);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 100px auto 100px;
+    gap: 10px;
+    margin: 25px;
+    font-family: sans-serif;
+    align-self: center;
+}
+
+header {
+    grid-column: 1 / 4;
+    font-size: 20px;
+    align-items: center;
+    background-color: rgb(172, 172, 221);
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    padding:10px;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: minmax(150px auto);
+    width: auto;
+    gap: 10px;
+}
+
+p { 
+    font-size: 20px;
+}
+
+img {
+    float: right;
+    margin: 10px;
+}
+
+p{
+    padding-top: 15px;
+}
+
+
+.aboutme  {
+    grid-column: 1 / 2;
+    background-color: rgb(102, 102, 134);
+    padding: 10px;
+
+}
+
+img {
+    flex-wrap: wrap;
+}
+.contact {
+    grid-column: 2 / 3;
+    background-color: rgb(172, 172, 221);
+    padding: 10px;
+}
+
+.mywork {
+    grid-column: 1 / 3;
+    background-color: rgb(102, 102, 134);
+    padding: 10px;
+}
+
+footer {
+    grid-column: 1 / 3;
+
+}
+
